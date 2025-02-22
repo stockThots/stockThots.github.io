@@ -14,13 +14,13 @@ document.addEventListener("DOMContentLoaded", () => {
 
   // Instantiate the Favorite Stocks component
   const favoriteStocks = new FavoriteStocks({
-    stocks: ['AAPL', 'GOOGL', 'AMZN', 'MSFT']
+    stocks: ['V', 'PLTR', 'NVDA', 'HIMS']
   });
   document.getElementById('favorite-stocks-section').innerHTML = favoriteStocks.render();
 
   // Instantiate the Watchlist component
   const watchlist = new Watchlist({
-    stocks: ['TSLA', 'NFLX', 'NVDA']
+    stocks: ['MA', 'NKE', 'AMD', 'FFIE']
   });
   document.getElementById('watchlist-section').innerHTML = watchlist.render();
 
