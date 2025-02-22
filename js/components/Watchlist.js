@@ -1,7 +1,7 @@
 // js/components/Watchlist.js
 class Watchlist {
     constructor({ stocks }) {
-      this.stocks = stocks || [];
+      this.stocks = stocks || ["MA", "NKE", "AMD", "FFIE"];
     }
   
     render() {
