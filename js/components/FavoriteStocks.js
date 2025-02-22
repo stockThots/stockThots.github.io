@@ -1,7 +1,7 @@
 // js/components/FavoriteStocks.js
 class FavoriteStocks {
     constructor({ stocks }) {
-      this.stocks = stocks || ["V", "PLTR", "NVDA", "HIMS"];
+      this.stocks = stocks || ['V', 'PLTR', 'NVDA', 'HIMS'];
     }
   
     render() {
