@@ -3,35 +3,41 @@
 // include these script files in index.html in the proper order
 
 document.addEventListener("DOMContentLoaded", () => {
-    // Create instances
-    const header = new Header();
-    const navbar = new Navbar();
-    const footer = new Footer();
-  
-    // Inject the components into designated placeholders
-    document.getElementById('header').innerHTML = header.render();
-    document.getElementById('navbar').innerHTML = navbar.render();
-    document.getElementById('footer').innerHTML = footer.render();
-  
-    // Additional logic: for instance, loading Adsense scripts if needed
+  // Existing components
+  const navbar = new Navbar();
+  const header = new Header();
+  const footer = new Footer();
 
-    // Create an instance for the RSI card
-    const rsiCard = new Card({
-      title: "Relative Strength Index (RSI)",
-      content:
-        "RSI is a momentum oscillator that measures the speed and change of price movements. Typically, an RSI above 70 indicates overbought conditions, while an RSI below 30 indicates oversold conditions.",
-    });
-  
-    // Create an instance for the MACD card
-    const macdCard = new Card({
-      title: "Moving Average Convergence Divergence (MACD)",
-      content:
-        "MACD is a trend-following momentum indicator that shows the relationship between two moving averages of a security's price. It helps in identifying potential buy and sell signals through the crossover of its moving averages.",
-    });
-  
-    // Inject the cards into the page
-    const cardsContainer = document.getElementById("cards-container");
-    cardsContainer.innerHTML = rsiCard.render() + macdCard.render();
+  document.getElementById('navbar').innerHTML = navbar.render();
+  document.getElementById('header').innerHTML = header.render();
+  document.getElementById('footer').innerHTML = footer.render();
 
-
+  // Instantiate the Favorite Stocks component
+  const favoriteStocks = new FavoriteStocks({
+    stocks: ['AAPL', 'GOOGL', 'AMZN', 'MSFT']
   });
+  document.getElementById('favorite-stocks-section').innerHTML = favoriteStocks.render();
+
+  // Instantiate the Watchlist component
+  const watchlist = new Watchlist({
+    stocks: ['TSLA', 'NFLX', 'NVDA']
+  });
+  document.getElementById('watchlist-section').innerHTML = watchlist.render();
+
+  // Create informational cards using our Card component
+  const rsiCard = new Card({
+    title: "Relative Strength Index (RSI)",
+    content: "RSI is a momentum oscillator that measures the speed and change of price movements. Typically, above 70 indicates overbought, while below 30 indicates oversold conditions."
+  });
+  const macdCard = new Card({
+    title: "MACD",
+    content: "MACD is a trend-following momentum indicator that shows the relationship between two moving averages of a security's price, helping identify buy and sell signals."
+  });
+
+  // Group cards in a content section
+  const contentSection = new ContentSection({
+    title: "Technical Analysis",
+    cards: [rsiCard, macdCard]
+  });
+  document.getElementById('content-section').innerHTML = contentSection.render();
+});

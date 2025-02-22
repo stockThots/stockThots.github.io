@@ -68,3 +68,33 @@ body {
     color: #666;
     line-height: 1.5;
   }
+
+    /* Additional styles for new sections */
+.favorite-stocks, .watchlist, .content-section {
+  margin: 20px auto;
+  max-width: 800px;
+  padding: 20px;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.favorite-stocks h2, .watchlist h2, .content-section h2 {
+  margin-bottom: 15px;
+}
+
+.favorite-stocks ul, .watchlist ul {
+  list-style: none;
+  padding: 0;
+}
+
+.favorite-stocks li, .watchlist li {
+  padding: 8px 0;
+  border-bottom: 1px solid #eee;
+}
+
+.cards-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 20px;
+}
