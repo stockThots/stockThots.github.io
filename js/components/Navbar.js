@@ -2,7 +2,7 @@
 class Navbar {
     constructor(options = {}) {
       // Initialize any properties you might need
-      this.menuItems = options.menuItems || ['Home', 'Stocks', 'About'];
+      this.menuItems = options.menuItems || ['Home', 'Stocks', 'About', 'Thoughts'];
 
       // Map each menu item to a URL
       this.menuLinks = {
