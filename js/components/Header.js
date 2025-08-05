@@ -9,7 +9,7 @@ class Header {
           <nav>
 
             <ul>
-              <li><a href="">X.com</a></li>
+              <li><a href="https://x.com/theRyan27Show">X.com</a></li>
               <li><a href="">GitHub</a></li>
               <li><a href="">LinkedIn</a></li>
             </ul>
