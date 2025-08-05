@@ -10,7 +10,7 @@ class Header {
 
             <ul>
               <li><a href="https://x.com/theRyan27Show">X.com</a></li>
-              <li><a href="">GitHub</a></li>
+              <li><a href="https://www.twitch.tv/ryanronish27">Twitch</a></li>
               <li><a href="">LinkedIn</a></li>
             </ul>
           </nav>
