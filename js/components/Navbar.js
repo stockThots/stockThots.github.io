@@ -8,7 +8,8 @@ class Navbar {
       this.menuLinks = {
         'Home': 'index.html',
         'Stocks': 'stocks.html',
-        'About': 'about.html'
+        'About': 'about.html',
+        'Thoughts': 'thoughts.html'
       };
     }
   
