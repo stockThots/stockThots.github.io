@@ -5,8 +5,8 @@ class Header {
       { name: 'X.com', url: 'https://x.com/theRyan27Show', icon: 'fab fa-x-twitter' },
       { name: 'Twitch', url: 'https://www.twitch.tv/ryanronish27', icon: 'fab fa-twitch' },
       { name: '_viewofdenver Instagram', url: 'https://www.instagram.com/_viewofdenver/', icon: 'fab fa-instagram' },
-      { name: 'Main Instagram', url: 'https://www.instagram.com/ryanronish/', icon: 'fab fa-instagram' },
-      { name: 'stock.thoughts', url: '', icon: 'https://www.instagram.com/stock.thoughts/' }
+      { name: 'ryanronish', url: 'https://www.instagram.com/ryanronish/', icon: 'fab fa-instagram' },
+      { name: 'stock.thoughts', url: 'https://www.instagram.com/stock.thoughts/', icon: 'fab fa-instagram' }
     ];
   }
 
